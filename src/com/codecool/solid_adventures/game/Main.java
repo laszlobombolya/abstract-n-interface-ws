@@ -11,21 +11,8 @@ public class Main {
 
     public static void main(String[] args) {
         // We have a board and characters can move on it
-
-        List<Object> characters = new ArrayList<>();
-        characters.add(new Elf());
-        characters.add(new Dragon());
-        characters.add(new Fox());
-
-        for(var gameCharacter : characters){
-            if(gameCharacter instanceof Elf){
-                ((Elf)gameCharacter).run();
-            } else if(gameCharacter instanceof Dragon){
-                ((Dragon)gameCharacter).fly();
-            }
-            else if(gameCharacter instanceof Fox){
-                ((Fox)gameCharacter).leap();
-            }
-        }
+        Game game = new Game();
+        game.initCharacters();
+        game.playRound();
     }
 }

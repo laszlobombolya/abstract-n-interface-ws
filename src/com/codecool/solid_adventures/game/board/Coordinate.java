@@ -1,4 +1,4 @@
-package com.codecool.solid_adventures.game;
+package com.codecool.solid_adventures.game.board;
 
 public class Coordinate {
     private int x;

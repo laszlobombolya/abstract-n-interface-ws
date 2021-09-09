@@ -1,6 +1,6 @@
 package com.codecool.solid_adventures.game.gameCharacters;
 
-import com.codecool.solid_adventures.game.Coordinate;
+import com.codecool.solid_adventures.game.board.Coordinate;
 
 public class Elf{
     private Coordinate coordinate;
